@@ -1,5 +1,5 @@
 #LQ系列-UI模块:
-####LQPhotoPickerDemo - http://blog.csdn.net/jp940110jpjp/article/details/50012677
+####LQPhotoPickerDemo - https://github.com/XZTLLQ/LQPhotoPickerDemo
 ####LQIMInputView - https://github.com/xztl/LQIMInputView
 #LQIMInputView
   如图功能，集成方便
