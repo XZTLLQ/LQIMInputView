@@ -1,6 +1,7 @@
-#LQ系列-UI模块:
-####LQPhotoPickerDemo - https://github.com/XZTLLQ/LQPhotoPickerDemo
-####LQIMInputView - https://github.com/xztl/LQIMInputView
+#LQ系列--UI
+####LQPhotoPickerDemo - https://github.com/XZTLLQ/LQClass （强烈推荐！！！可节约项目大量细节调控时间，体验效果很好！）
+####LQPhotoPickerDemo - https://github.com/XZTLLQ/LQPhotoPickerDemo （选择图片上传）
+####LQIMInputView - https://github.com/xztl/LQIMInputView （聊天页面工具栏）
 #LQIMInputView
 ### 效果图
   如图功能，集成方便
