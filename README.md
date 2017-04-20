@@ -29,34 +29,16 @@ self.inputView = [[LQIMInputView alloc] initWithFrame:CGRectMake(0, [UIScreen ma
         NSLog(@"拍照");
     }]];
     [self.inputView addItem:[InputItemModel initWithTitle:@"加价" imageName:@"jiajia" clickedBlock:^{
-        NSLog(@"拍照");
+        NSLog(@"加价");
     }]];
     [self.inputView addItem:[InputItemModel initWithTitle:@"确认完成" imageName:@"queren" clickedBlock:^{
-        
+        NSLog(@"确认完成");
     }]];
     [self.inputView addItem:[InputItemModel initWithTitle:@"联系客服" imageName:@"kefu" clickedBlock:^{
-        
+        NSLog(@"联系客服");
     }]];
     [self.inputView addItem:[InputItemModel initWithTitle:@"电话联系" imageName:@"dianhau" clickedBlock:^{
-        
-    }]];
-    [self.inputView addItem:[InputItemModel initWithTitle:@"相册" imageName:@"tupian" clickedBlock:^{
-        NSLog(@"相册");
-    }]];
-    [self.inputView addItem:[InputItemModel initWithTitle:@"拍照" imageName:@"zhaoxian" clickedBlock:^{
-        NSLog(@"拍照");
-    }]];
-    [self.inputView addItem:[InputItemModel initWithTitle:@"加价" imageName:@"jiajia" clickedBlock:^{
-        NSLog(@"拍照");
-    }]];
-    [self.inputView addItem:[InputItemModel initWithTitle:@"确认完成" imageName:@"queren" clickedBlock:^{
-        
-    }]];
-    [self.inputView addItem:[InputItemModel initWithTitle:@"联系客服" imageName:@"kefu" clickedBlock:^{
-        
-    }]];
-    [self.inputView addItem:[InputItemModel initWithTitle:@"电话联系" imageName:@"dianhau" clickedBlock:^{
-        
+        NSLog(@"电话联系");
     }]];
 //第四步
     [self.view addSubview:self.inputView];
