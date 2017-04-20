@@ -15,9 +15,10 @@
 
 @property(nonatomic,strong) NSString *imageName;
 
-@property(nonatomic,assign) NSInteger type;
+typedef void (^ItemClicked)(void);
+@property(nonatomic, copy) ItemClicked clickedBlock;
 
 
-+ (instancetype)initWithTitle:(NSString *)title imageName:(NSString *)imageName type:(NSInteger)type;
++ (instancetype)initWithTitle:(NSString *)title imageName:(NSString *)imageName clickedBlock:(ItemClicked)clickedBlock;
 
 @end

@@ -9,12 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "InputItem.h"
 
-@protocol LQIMInputViewDelegate <NSObject>
-
-@optional
-- (void)didSelectedItemType:(NSInteger)type;
-
-@end
 
 @interface LQIMInputView : UIView<UICollectionViewDelegate,UICollectionViewDataSource>
 
@@ -22,11 +16,11 @@
 
 @property(nonatomic,strong) UIPageControl *pageCtr;
 
-@property(nonatomic,strong) NSArray<InputItemModel*> *itemModels;
+@property(nonatomic,strong) NSMutableArray<InputItemModel*> *itemModels;
 
 
-@property(nonatomic,weak) id<LQIMInputViewDelegate> delegate;
+- (instancetype)initWithFrame:(CGRect)frame;
 
-+ (instancetype)initWithFrame:(CGRect)frame itemModels:(NSArray *)itemModels;
+- (void)addItem:(InputItemModel*)model;
 
 @end

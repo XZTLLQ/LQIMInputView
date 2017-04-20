@@ -10,19 +10,20 @@
 
 @implementation InputItemModel
 
-- (instancetype)initWithTitle:(NSString *)title imageName:(NSString *)imageName type:(NSInteger)type
+- (instancetype)initWithTitle:(NSString *)title imageName:(NSString *)imageName clickedBlock:(ItemClicked)clickedBlock
 {
     self = [super init];
     if (self) {
         self.title = title;
         self.imageName = imageName;
-        self.type = type;
+
+        self.clickedBlock = clickedBlock;
     }
     return self;
 }
 
-+ (instancetype)initWithTitle:(NSString *)title imageName:(NSString *)imageName type:(NSInteger)type{
-    return [[InputItemModel alloc] initWithTitle:title imageName:imageName type:type];
++ (instancetype)initWithTitle:(NSString *)title imageName:(NSString *)imageName clickedBlock:(ItemClicked)clickedBlock{
+    return [[InputItemModel alloc] initWithTitle:title imageName:imageName clickedBlock:clickedBlock];
 }
 
 @end

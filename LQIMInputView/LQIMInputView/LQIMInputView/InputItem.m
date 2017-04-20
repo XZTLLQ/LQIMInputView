@@ -25,8 +25,6 @@
     
     [self.contentBtn setTitle:_model.title forState:UIControlStateNormal];
     
-    self.contentBtn.tag = _model.type;
-    
     [self setImageSpacing:6];
 
 }

@@ -16,7 +16,6 @@
 		E602E1171DBEF776007DE597 /* LQIMInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = E602E1161DBEF776007DE597 /* LQIMInputView.m */; };
 		E602E11A1DBEF8EE007DE597 /* InputItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E602E1191DBEF8EE007DE597 /* InputItem.m */; };
 		E602E11D1DBF057A007DE597 /* InputItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E602E11C1DBF057A007DE597 /* InputItemModel.m */; };
-		E602E1221DBF11B5007DE597 /* LQInputViewConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E602E1211DBF11B5007DE597 /* LQInputViewConfig.m */; };
 		E602E1251DBF4235007DE597 /* LQCollectionViewHorizontalLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E602E1241DBF4235007DE597 /* LQCollectionViewHorizontalLayout.m */; };
 /* End PBXBuildFile section */
 
@@ -37,8 +36,6 @@
 		E602E1191DBEF8EE007DE597 /* InputItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputItem.m; sourceTree = "<group>"; };
 		E602E11B1DBF057A007DE597 /* InputItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputItemModel.h; sourceTree = "<group>"; };
 		E602E11C1DBF057A007DE597 /* InputItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputItemModel.m; sourceTree = "<group>"; };
-		E602E1201DBF11B5007DE597 /* LQInputViewConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQInputViewConfig.h; sourceTree = "<group>"; };
-		E602E1211DBF11B5007DE597 /* LQInputViewConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQInputViewConfig.m; sourceTree = "<group>"; };
 		E602E1231DBF4235007DE597 /* LQCollectionViewHorizontalLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCollectionViewHorizontalLayout.h; sourceTree = "<group>"; };
 		E602E1241DBF4235007DE597 /* LQCollectionViewHorizontalLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCollectionViewHorizontalLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,8 +103,6 @@
 				E602E1241DBF4235007DE597 /* LQCollectionViewHorizontalLayout.m */,
 				E602E1151DBEF776007DE597 /* LQIMInputView.h */,
 				E602E1161DBEF776007DE597 /* LQIMInputView.m */,
-				E602E1201DBF11B5007DE597 /* LQInputViewConfig.h */,
-				E602E1211DBF11B5007DE597 /* LQInputViewConfig.m */,
 			);
 			path = LQIMInputView;
 			sourceTree = "<group>";
@@ -183,7 +178,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E602E1221DBF11B5007DE597 /* LQInputViewConfig.m in Sources */,
 				E602E1171DBEF776007DE597 /* LQIMInputView.m in Sources */,
 				E602E11D1DBF057A007DE597 /* InputItemModel.m in Sources */,
 				E602E1051DBEF6AC007DE597 /* ViewController.m in Sources */,

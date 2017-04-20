@@ -21,15 +21,11 @@
     return self;
 }
 
-+ (instancetype)initWithFrame:(CGRect)frame itemModels:(NSArray *)itemModels {
-    
-    LQIMInputView *view = [[LQIMInputView alloc] initWithFrame:frame];
-    view.itemModels = itemModels;
-    return view;
-}
-
-- (void)setItemModels:(NSArray<InputItemModel *> *)itemModels {
-    _itemModels = itemModels;
+- (void)addItem:(InputItemModel*)model {
+    if (!self.itemModels) {
+        self.itemModels = [NSMutableArray array];
+    }
+    [self.itemModels addObject:model];
     [self.collectionView reloadData];
     
     NSInteger pageNum = (_itemModels.count-1) / 8 + 1;
@@ -38,7 +34,6 @@
         _pageCtr.currentPage = 0;
     }
 }
-
 
 #pragma mark - 页码控件
 - (UIPageControl *)pageCtr {
@@ -91,22 +86,15 @@
     InputItem *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"InputItem" forIndexPath:indexPath];
     
     cell.model = self.itemModels[indexPath.item];
-    [cell.contentBtn addTarget:self action:@selector(didSelectedItemType:) forControlEvents:UIControlEventTouchUpInside];
     return cell;
 }
 
-#pragma mark - 按钮点击事件
-- (void)didSelectedItemType:(id)sender {
-    UIButton *btn = (UIButton *)sender;
-    if (_delegate && [_delegate respondsToSelector:@selector(didSelectedItemType:)]) {
-        [_delegate didSelectedItemType:btn.tag];
-    }
-}
 
 #pragma mark - 选择了某功能
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    if (_delegate && [_delegate respondsToSelector:@selector(didSelectedItemType:)]) {
-        [_delegate didSelectedItemType:self.itemModels[indexPath.item].type];
+    InputItemModel *item = self.itemModels[indexPath.item];
+    if (item.clickedBlock) {
+        item.clickedBlock();
     }
 }
 
