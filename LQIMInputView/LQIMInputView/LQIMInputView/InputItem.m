@@ -33,8 +33,9 @@
     if (!_contentBtn) {
         _contentBtn = [[UIButton alloc] initWithFrame:self.bounds];
         _contentBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;//使图片和文字水平居中显示
-        self.contentBtn.titleLabel.font = [UIFont systemFontOfSize:12];
-        [self.contentBtn setTitleColor:[UIColor colorWithRed:90.0/255.0 green:90.0/255.0 blue:90.0/255.0 alpha:1.0] forState:UIControlStateNormal];
+        _contentBtn.userInteractionEnabled = NO;
+        _contentBtn.titleLabel.font = [UIFont systemFontOfSize:12];
+        [_contentBtn setTitleColor:[UIColor colorWithRed:90.0/255.0 green:90.0/255.0 blue:90.0/255.0 alpha:1.0] forState:UIControlStateNormal];
         [self addSubview:_contentBtn];
     }
     return _contentBtn;
