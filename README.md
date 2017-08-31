@@ -1,4 +1,4 @@
-# LQ系列 -- APP 项目模板 V1.0（高阶）
+# LQ系列 -- APP 项目模板 V1.0
 
 #### 项目开发模板-按需登录型应用 - https://github.com/XZTLLQ/LQProject-NoLogin
 #### 项目开发模板-强制登录型应用 - https://github.com/XZTLLQ/LQProject-MustLogin
